@@ -26,18 +26,14 @@ public class MainActivity extends AppCompatActivity {
         replaceFragment(new HomeFragment());
 
         binding.bottomNavigationView3.setOnItemSelectedListener(item -> {
-            switch (item.getItemId()){
-                case R.id.home:
-                    replaceFragment(new HomeFragment());
-                    break;
-                case R.id.profile:
-                    replaceFragment(new ProfileFragment());
-                    break;
-                case R.id.settings:
-                    replaceFragment(new SettingsFragment());
-                    break;
+            int id = item.getItemId();
+            if (id == R.id.home) {
+                replaceFragment(new HomeFragment());
+            } else if (id == R.id.profile) {
+                replaceFragment(new ProfileFragment());
+            } else if (id == R.id.settings) {
+                replaceFragment(new SettingsFragment());
             }
-
             return true;
         });
 
