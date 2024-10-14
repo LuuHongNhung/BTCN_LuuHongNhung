@@ -3,17 +3,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B2E2FB"
+    android:background="@drawable/background"
     tools:context=".ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LuuHongNhung Profile"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_gravity="center"/>
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/img"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Luu Hong Nhung"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#A1AC84"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MSV: 22115053122129"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:textColor="#A1AC84"
+            android:layout_marginTop="5dp"
+            android:gravity="center"/>
+    </LinearLayout>
 
 </FrameLayout>
